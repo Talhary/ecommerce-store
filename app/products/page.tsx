@@ -7,7 +7,7 @@ import { useStore } from "@/utils/store"
 import Image from "next/image"
 import Link from "next/link"
 import { IoArrowBackCircle } from "react-icons/io5"
-export default function Component({params}:{params:{id:string}}) {
+const Component = ({params}:{params:{id:string}})=> {
   
     const {addToCart} = useStore()
   return (
@@ -49,3 +49,4 @@ export default function Component({params}:{params:{id:string}}) {
     </div>
   )
 }
+export default Component
