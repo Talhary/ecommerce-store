@@ -8,7 +8,7 @@ import { getProduct } from "@/actions/get-products";
 import { useStore } from "@/utils/store";
 import { IoArrowBackCircle } from "react-icons/io5";
 import Link from "next/link";
-
+import Image from 'next/image'
 const ClientComponent = ({ params }) => {
   const id = params.id;
   const [product, setProduct] = useState(null);
@@ -60,8 +60,8 @@ const ClientComponent = ({ params }) => {
     <div className=" w-[400px] max-h-screen grid md:grid-cols-2 gap-6 lg:gap-12 items-start  px-4 mx-auto py-6">
      
       <div className="grid gap-4 md:gap-10 items-start">
-        <img
-          src={"." + product.src}
+        <Image
+          src={  product.src}
           alt="Product Image"
           height={400}
           width={400}

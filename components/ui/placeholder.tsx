@@ -8,6 +8,7 @@ import { useEffect, useState, useTransition } from "react";
 import { useStore } from "@/utils/store";
 import { products } from "@/utils/products";
 import { IoHome } from "react-icons/io5";
+import Image from "next/image";
 export default () => {
   const [isPending, startTransition] = useTransition();
 
@@ -56,7 +57,7 @@ export default () => {
       
       <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
         <div className="container px-4 md:px-6 grid gap-6 lg:grid-cols-2 lg:gap-12">
-          <img
+          <Image
             src="/image1.jpg"
             width="550"
             height="550"
@@ -170,7 +171,7 @@ export default () => {
                   return (
                     <Card key={i} className="max-w-sm mx-auto  bg-background rounded-lg shadow-lg overflow-hidden">
                        <div className="h-[350px] flex items-center justify-center">
-                       <img
+                       <Image
                         src={product.src}
                         alt={product.alt}
                         width={300}

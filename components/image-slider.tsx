@@ -44,7 +44,7 @@ export function ImageSlider() {
             <CarouselItem key={index}>
               <Card>
                 <CardContent className="flex items-center justify-center p-1">
-                  <img src={el} alt='Image' className=" object-cover w-[400px] h-[400px] max-h-[400px]"/>
+                  <Image src={el} alt='Image' className=" object-cover w-[400px] h-[400px] max-h-[400px]"/>
                 </CardContent>
               </Card>
             </CarouselItem>

@@ -4,6 +4,7 @@
 import { Button } from "@/components/ui/button"
 import { products } from "@/utils/products"
 import { useStore } from "@/utils/store"
+import Image from "next/image"
 import Link from "next/link"
 import { IoArrowBackCircle } from "react-icons/io5"
 export default function Component({params}:{params:{id:string}}) {
@@ -24,7 +25,7 @@ export default function Component({params}:{params:{id:string}}) {
         {products.map((product,i)=>{
             return (
                 <div key={i} className="bg-background rounded-lg overflow-hidden shadow-lg">
-                <img src={product.src} alt="T-Shirt 1" width={400} height={500} className="w-full h-64 object-contain" />
+                <Image src={product.src} alt="T-Shirt 1" width={400} height={500} className="w-full h-64 object-contain" />
                 <div className="p-4">
                   <h2 className="text-lg font-semibold">{product.name}</h2>
                   <p className="text-muted-foreground text-sm mb-4">

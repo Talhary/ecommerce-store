@@ -1,6 +1,7 @@
 
 import Link from "next/link"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
+import Image from "next/image"
 
 export default function Component() {
   return (
@@ -41,7 +42,7 @@ export default function Component() {
                 </p>
               </div>
               <div className="flex flex-col items-start space-y-4">
-                <img
+                <Image
                   src="/image3.jpg"
                   width="550"
                   height="550"
@@ -148,7 +149,7 @@ export default function Component() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
+              <Image
                 src="/image2.jpg"
                 width="550"
                 height="310"

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useStore } from '@/utils/store';
 import { Button } from '@/components/ui/button'; // Assuming you have a Button component
 import { products } from '@/utils/products';
+import Image from 'next/image';
 
 export const SliderCart = () => {
   const { cart, addToCart, decrementFromCart, removeFromCart, isCartVisible, toggleCartVisibility, lastAddedItem } = useStore();
@@ -63,7 +64,9 @@ export const SliderCart = () => {
               }
               return (
                 <div key={index} className="flex items-center mb-4">
-                  <img
+                  <Image
+                    height={60}
+                    width={60}
                     src={product.src}
                     alt={product.alt}
                     className="w-16 h-16 object-cover rounded"
