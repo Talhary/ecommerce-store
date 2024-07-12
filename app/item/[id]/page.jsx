@@ -51,13 +51,13 @@ const ClientComponent = ({ params }) => {
   }
 
   return (
-    <div className=" relative z-0">
+    <div className=" relative z-0 h-screen flex items-center justify-center">
     <div className="absolute z-10  left-5 top-5" >
     <Link href={'/'}>
      <IoArrowBackCircle size={40} color=""  />
      </Link>
    </div>
-    <div className=" w-[400px] max-h-screen grid md:grid-cols-2 gap-6 lg:gap-12 items-start  px-4 mx-auto py-6">
+    <div className="  grid md:grid-cols-2 gap-6 lg:gap-12 items-start  px-4 mx-auto py-6">
      
       <div className="grid gap-4 md:gap-10 items-start">
         <Image
